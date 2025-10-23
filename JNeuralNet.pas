@@ -2,6 +2,9 @@
 
 interface
 
+//uses
+  //JElement, W3C.DOM, W3C.HTML5, W3C.XMLHttpRequest, ECMA.JSON;
+
 type
   TMatrix = class
   protected
@@ -74,7 +77,7 @@ implementation
 { JW3NeuralNet }
 
 uses
-  Globals, Types;
+  Globals, API; //ECMA.JSON;
 
 constructor JW3NeuralNet.Create;
 begin
@@ -388,4 +391,45 @@ begin
 end;
 
 end.
+
+
+/*
+  //For var i := 1 to Layers.Count -1 do begin
+  //  console.log(JSON.Stringify(Layers[i].MWeights));
+  //  console.log('=============================');
+  //end;
+*/
+
+/*
+Function GetMinValue(Matrix1: TMatrix): integer;
+Function GetMaxValue(Matrix1: TMatrix): integer;
+
+function GetMinValue(Matrix1: TMatrix): integer;
+var
+  minvalue : float;
+begin
+  MinValue := Matrix1.GetValue(0,0);
+  Result := 0;
+  For var i := 0 to Matrix1.NrRows -1 do begin
+    if Matrix1.GetValue(i,0) < MinValue then begin
+      MinValue := Matrix1.GetValue(i,0);
+      Result := i;
+    end;
+  end;
+end;
+
+function GetMaxValue(Matrix1: TMatrix): integer;
+var
+  maxvalue : float;
+begin
+  MaxValue := Matrix1.GetValue(0,0);
+  Result := 0;
+  For var i := 0 to Matrix1.NrRows -1 do begin
+    if Matrix1.GetValue(i,0) > MaxValue then begin
+      MaxValue := Matrix1.GetValue(i,0);
+      Result := i;
+    end;
+  end;
+end;
+*/
 

@@ -25,14 +25,13 @@ begin
   SetProperty('border','0px');
   SetProperty('border-radius', '4px');
   SetProperty('cursor','pointer');
-//  SetProperty('box-shadow',#'0 -1px 1px 0 rgba(0, 0, 0, 0.25) inset,
-//                             0  1px 1px 0 rgba(0, 0, 0, 0.10) inset;)');
+  SetProperty('box-shadow',#'0 -1px 1px 0 rgba(0, 0, 0, 0.25) inset,
+                             0  1px 1px 0 rgba(0, 0, 0, 0.10) inset;)');
 
   //SetCss('background-color' , '#0099FF');             //'#699BCE'
   //SetCss('hover', 'background-color' , '#0077FF');
 
   SetCss(          'background-color' , getCSSVar('--button-colorbase'));
-  //SetCss('hover',  'filter' , 'brightness(' + getCSSVar('--button-brightnesshover') + ')');
   SetCss('hover',  'background-color' , getCSSVar('--button-colorhover'));
   SetCss('active', 'background-color' , getCSSVar('--button-coloractive'));
   SetCss('focus',  'outline' ,          getCSSVar('--button-borderfocus'));

@@ -2,7 +2,7 @@
 
 interface
 
-uses JApplication, Types, JElement;
+uses JApplication, API, JElement;
 
 type
   TW3Identifiers = static class
@@ -61,7 +61,7 @@ begin
   var payload : variant := new JObject;
   payload.detail := JSON.stringify(msg);
   var myEvent : variant := new JObject;
-  asm @myEvent = new CustomEvent(@customEvent, @payload); end;
+  asm @myEvent = new CustomEvent(customEvent, @payload); end;
   document.dispatchEvent(myEvent);
 end;
 
@@ -257,6 +257,7 @@ initialization
 */
 
     //asm @FileReader = new Worker('https://www.lynkit.com.au/filereader.js'); end;
+    //asm @FileReader = new Worker('filereader.js'); end;
 
     var styleEl :variant := document.createElement('style');
     // Append <style> element to <head>
@@ -281,7 +282,6 @@ initialization
         --button-colorhover:  #0077FF;
         --button-coloractive: red;
         --button-borderfocus: 0px;
-//        --button-brightnesshover: 0.9;
       }';
     styleSheet.insertRule(s2, 0);
 end.

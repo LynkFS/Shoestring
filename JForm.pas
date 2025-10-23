@@ -43,8 +43,7 @@ begin
 
   OnResize := procedure(sender:TObject)
   begin
-    screenwidth  := window.innerWidth;
-    screenheight := window.innerHeight;
+    screenwidth := window.innerWidth;
     ReSize;
   end;
 

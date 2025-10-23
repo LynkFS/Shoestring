@@ -2,7 +2,7 @@
 
 interface
 
-uses Types;
+uses API;
 
 type
   TMouseClickEvent   = procedure(sender:TObject);

@@ -3,7 +3,7 @@
 interface
 
 uses
-  JElement, Types, JGrid, JPanel, JSpinner;
+  JElement, API, JGrid, JPanel, JSpinner;
 
 type
   JW3DBGrid = class(TElement)

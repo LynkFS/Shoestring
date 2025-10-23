@@ -1,4 +1,4 @@
-﻿unit JPanel;
+unit JPanel;
 
 interface
 
@@ -19,7 +19,6 @@ implementation
 constructor JW3Panel.Create(parent: TElement);
 begin
   inherited Create('div', parent);
-
 end;
 
 end.
