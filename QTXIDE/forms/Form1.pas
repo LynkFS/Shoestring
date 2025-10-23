@@ -5,7 +5,7 @@ interface
 uses JElement, JForm, JListBox, JPanel, JButton, JProgress, JImage, JToolBar,
      JSelect, JTextArea, JVideo, JLoader, JGrid, JCanvas, JTreeView,
      JCheckBox, JRadioButton, JFieldSet, JSpinner, JIframe, JInput,
-     JStreetView, JSplitter, JTabControl, JDBGrid, JScroller,
+     JSplitter, JTabControl, JDBGrid, JScroller,
      JToggle, JWindow;
 
 type
@@ -1233,5 +1233,6 @@ end.
   end;
   Components.Add(ComponentRec);
 */
+
 
 
